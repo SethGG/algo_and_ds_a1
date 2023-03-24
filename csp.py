@@ -114,6 +114,7 @@ class CSP:
                 if grid is not None and self.satisfies_group_constraints(self.cell_to_groups[empty_locations[0]]):
                     return grid
             else:
+                self.grid[empty_locations[0]] = 0
                 return None
         else:
             return self.grid
